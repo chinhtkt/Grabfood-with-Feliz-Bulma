@@ -473,16 +473,16 @@ let questionBottom =
         ]
     ]
 
+
 let Footer =
     Bulma.block [
         color.hasBackgroundWhiteTer
         prop.children [
             Bulma.container [
                 Bulma.footer [
-                       Bulma.section [
+                    Bulma.section [
                         Bulma.columns [
                             columns.isCentered
-                            columns.isVCentered
                             prop.children [
                                 Bulma.column [
                                     column.isTwoFifths
@@ -533,28 +533,33 @@ let Footer =
                                         Bulma.title [
                                             title.is6
                                             text.hasTextWeightNormal
-       
+
                                             prop.text
                                                 "Download Grab app to use other payment methods and enjoy seamless communication with your driver."
                                         ]
                                         Bulma.container [
-                                         Bulma.columns [
-                                         Bulma.helpers.isFlex
-                                         prop.children [
+                                            Bulma.columns [
+                                                Bulma.helpers.isFlex
+                                                prop.children [
 
-                                          Bulma.column [
-                                          Html.img [
-                                           prop.src "https://food.grab.com/static/images/logo-appstore.svg"
-                                          ]
+                                                    Bulma.column [
+                                                        Html.img [
+                                                            prop.src
+                                                                "https://food.grab.com/static/images/logo-appstore.svg"
+                                                        ]
 
-                                          ]
-                                          Bulma.column [
-                                          Html.img [
-                                          prop.src "https://food.grab.com/static/images/logo-playstore.svg"
-                                          ]
-                                          ]
-                                         ]
-                                         ]
+                                                    ]
+                                                    Bulma.column [
+                                                        Html.img [
+                                                            prop.src
+                                                                "https://food.grab.com/static/images/logo-playstore.svg"
+                                                        ]
+                                                    ]
+
+                                                ]
+
+                                            ]
+
                                         ]
 
                                     ]
@@ -564,9 +569,8 @@ let Footer =
                             ]
 
                         ]
-                       ]
 
-
+                    ]
 
                 ]
 
